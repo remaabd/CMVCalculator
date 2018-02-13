@@ -1,3 +1,4 @@
+package mysrc;
 import javax.swing.JOptionPane;
 
 public class Calcmodel {

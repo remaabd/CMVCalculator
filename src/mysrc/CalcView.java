@@ -1,3 +1,4 @@
+package mysrc;
 import java.awt.Point;
 import java.awt.event.ActionListener;
 
