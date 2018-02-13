@@ -29,7 +29,7 @@ includeantruntime="false">
 <formatter type="brief" usefile="false"/>
 <batchtest >
 <fileset dir="${result.javaclasses.dir}" >
-<include name="**/*TestJunit.class"/>
+<include name="**/*TestJUnit.class"/>
 </fileset>
 </batchtest>
 </junit>
