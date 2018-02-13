@@ -71,6 +71,13 @@
             <classpath refid="Calc.classpath"/>
         </junit>
     </target>
+    <target name="C__Users_alisraa_Downloads_eclipse-java-mars-R-win32-x86_64_eclipse_plugins_org.hamcrest.core_1.3.0.v201303031735.jar">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <classpath refid="Calc.classpath"/>
+        </junit>
+    </target>
     <target name="junitreport">
         <junitreport todir="${junit.output.dir}">
             <fileset dir="${junit.output.dir}">
