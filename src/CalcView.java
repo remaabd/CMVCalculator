@@ -81,6 +81,6 @@ public class CalcView extends JFrame{
 		Sqr.addActionListener(listner);
 	}
 	public void DisplayErrorMesage (String errorMessage){
-		JOptionPane.showMessageDialog(this, errorMessage);
+	//	JOptionPane.showMessageDialog(this, errorMessage);
 	}
 }

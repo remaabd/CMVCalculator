@@ -31,7 +31,7 @@ public class CalcController {
 			
 			result=model.add(firstNum, secondNum);
 			if(model.flag3==1)
-			{    view.DisplayErrorMesage(" you have to enter double values");
+			{   // view.DisplayErrorMesage(" you have to enter double values");
 			     view.FirstNum.setText(""); view.SecondNum.setText(""); 
 			 }
 			else {  res=String.format("%.3f", result);
@@ -52,7 +52,7 @@ public class CalcController {
 				
 				result=model.sub(firstNum, secondNum);
 				if(model.flag3==1)
-				{    view.DisplayErrorMesage(" you have to enter double values");
+				{    //view.DisplayErrorMesage(" you have to enter double values");
 				     view.FirstNum.setText(""); view.SecondNum.setText(""); 
 				 }
 				else {  res=String.format("%.3f", result);
@@ -73,7 +73,7 @@ public class CalcController {
 				
 				result=model.mul(firstNum, secondNum);
 				if(model.flag3==1)
-				{    view.DisplayErrorMesage(" you have to enter double values");
+				{   // view.DisplayErrorMesage(" you have to enter double values");
 				     view.FirstNum.setText(""); view.SecondNum.setText(""); 
 				 }
 				else {  res=String.format("%.3f", result);
@@ -95,12 +95,12 @@ public class CalcController {
 				result=model.div(firstNum, secondNum);
 				
 				if(model.flag3==1)
-				{    view.DisplayErrorMesage(" you have to enter double values");
+				{    //view.DisplayErrorMesage(" you have to enter double values");
 				     view.FirstNum.setText(""); view.SecondNum.setText(""); 
 				 }
 				else if(model.flag1==1)
 				{
-					view.DisplayErrorMesage(" you can not divide on a zero number, please try again");
+					//view.DisplayErrorMesage(" you can not divide on a zero number, please try again");
 				    view.FirstNum.setText(""); view.SecondNum.setText(""); 
 				}
 				else {  res=String.format("%.3f", result);
@@ -121,12 +121,12 @@ public class CalcController {
 				result=model.mod(firstNum, secondNum);
 				
 				if(model.flag3==1 || model.flag4==1)
-				{    view.DisplayErrorMesage(" you have to enter integer values");
+				{    //view.DisplayErrorMesage(" you have to enter integer values");
 				     view.FirstNum.setText(""); view.SecondNum.setText(""); 
 				 }
 				else if(model.flag1==1)
 				{
-					view.DisplayErrorMesage(" you can not have amodule on a zero number, please try again");
+					//view.DisplayErrorMesage(" you can not have amodule on a zero number, please try again");
 				    view.FirstNum.setText(""); view.SecondNum.setText(""); 
 				}
 				else {  res=String.format("%.3f", result);
@@ -147,7 +147,7 @@ public class CalcController {
 			
 				result=model.sqr(firstNum);
 				if(model.flag3==1||model.flag2==1)
-				{view.DisplayErrorMesage(" you have to enter a non zero double value");
+				{//view.DisplayErrorMesage(" you have to enter a non zero double value");
 				view.FirstNum.setText(""); view.SecondNum.setText(""); }
 				
 				else {  res=String.format("%.3f", result);
